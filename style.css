@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px 5%;
+    align-items: center;
+}
+nav .dropdown{
+    display: flex;
+    list-style: none;
+
+}
+.dropdown li{
+    padding:0 10px;
+}
+nav .toggleBIN{
+    display:none;
+}
+@media (max-width: 768px){
+    nav .dropdown{
+        display:none;
+        position :fixed;
+        top:50px;
+        left:0px;
+        width:100%;
+        text-align:center;
+        background-color: antiquewhite;
+    }
+    .toogleBIN{
+        display:block;
+        font-size:30px;
+        cursor: pointer;
+    }   
+}
