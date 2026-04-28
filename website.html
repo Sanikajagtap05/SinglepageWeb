@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,9 +26,116 @@
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
                 <li><i class="fa-regular fa-user"></i>Login</li>
                 <li><i class="fa-regular fa-registered"></i>Register</li>
+
             </ul>
         </nav>
-       
+        <div class="headerdiv">
+            <div class="left">
+                <div class="content">
+                    <h1>Find a perfect job for you</h1>
+                    <button>Read More</button>
+                </div>
+                <img src="./imges/slider-img.png" />
+            </div>
+            <div class="right">
+            </div>
+        </div>
+
+        <div class="form">
+            <form>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <button>Search</button>
+
+            </form>
+        </div>
     </header>
+    <section>
+        <div class="heading">
+            <h1>Recommendation jobs</h1>
+            <h1>15000+ jobs availabel for you</h1>
+            <div>
+                <button>Part Time</button>
+                <button>Full Time</button>
+            </div>
+        </div>
+        <div class="jobCardContainer">
+            <div class="jodCards">
+                <div class="card">
+                    <h1>UX Design</h1>
+                    <a href="">Apply now</a>
+                </div>
+                <div class="card">
+                    <h1>UI Design</h1>
+                    <a href="">Apply now</a>
+                </div>
+                <div class="card">
+                    <h1>UX Design</h1>
+                    <a href="">Apply now</a>
+                </div>
+                <div class="card">
+                    <h1>UI Design</h1>
+                    <a href="">Apply now</a>    
+                </div>
+            </div>
+            <button>See More</button><!-- Job cards will be dynamically inserted here -->
+        </div>
+    </section>
+    <article>
+        <div>
+            <h1>Featured Job</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <button>Read More</button>
+        </div>
+        <img src="./imges/feature-img.jpg" alt="">
+    </article>
+    <article>
+        <img src="./imges/feature-img.jpg" alt="">
+        <div>
+            <h1>Featured Job</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <button>Read More</button>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h1>About Us</h1>
+            <p>This is about</p>
+            <p>This is about</p>
+            <p>This is about</p>
+            <p>This is about</p>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <p>this is Contact</p>
+            <p>this is Contact</p>
+            <p>this is Contact</p>
+            <p>this is Contact</p>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <p>This instagram</p>
+            <p>This instragram</p>
+            <p>This instragram</p>
+            <p>This instragram</p>
+        </div>
+        <div>
+            <h1>Subscribe</h1>
+            <p>this is subscribe</p>
+            <p>this is subscribe</p>
+            <p>this is subscribe </p>
+            <p>this is subscribe</p>
+        </div>
+        </div>
+    </footer>
+        </div>
+        
+        <script>
+        $(".toggleBIN").click(function () {
+            $(".dropdown").slideToggle()
+        })
+    </script>
 </body>
+
 </html>
