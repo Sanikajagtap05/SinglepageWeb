@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-4.0.0.js"
@@ -107,7 +107,7 @@
     <article>
         <div>
             <h1>Featured Job</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos atque assumenda blanditiis sint eius voluptas eveniet pariatur consequuntur rem numquam magni porro, architecto deserunt nam veritatis temporibus expedita debitis illum.</p>
             <button>Read More</button>
         </div>
         <img src="./imges/feature-img.jpg" alt="">
@@ -116,7 +116,7 @@
         <img src="./imges/feature-img.jpg" alt="">
         <div>
             <h1>Featured Job</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
             <button>Read More</button>
         </div>
     </article>
@@ -156,6 +156,16 @@
     <script>
         $(".toggleBIN").click(function () {
             $(".dropdown").slideToggle()
+        })
+        $(document).ready(function(){
+            $(document).scroll(function(){
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                           $("nav").css("background","black")
+                        } else {
+                            $("nav").css("background","transparent")
+                        }
+
+            })
         })
     </script>
 </body>

@@ -158,10 +158,48 @@ text-align: center;
 }
 article{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+}
+article div{
+    width:50%;
+    background-color: orange;
+    color: white;
+    padding:70px 5% 50px 10%;
+}
+article img{
+    width:50%;
+    height: 500px;
+
+}
+article h1{
+    font-size:50px;
 }
 
-
+article p{
+    padding:50px 0;
+}
+article button{
+    padding:10px 20px;
+    background-color: black;
+    color:white;
+    border:none;
+}
+footer{
+    display:flex;
+    background-color: black;
+    color:white;
+}
+footer div{
+    width:25%;
+    padding:10px 5%;
+}
+article img,article div{
+    width:100%;
+}
+footer div{
+    width:25%;
+    padding:10px 5%;
+}
 @media (max-width: 768px){
     nav .dropdown{
         display:none;
@@ -176,5 +214,27 @@ article{
         display:block;
         font-size:30px;
         cursor: pointer;
-    }   
+    }  
+    .left .content,.left img{
+        width:100%;
+        padding: 50px 0;
+        }
+        .form{
+            left:10%;
+            width: 80%;
+        }
+        .form input{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        section{
+            padding-top: 30vh;
+        }
+        article img,article div{
+            width:100%
+        } 
+        footer div{
+            width:50%;
+            padding:10px 5%
+        }
 }
