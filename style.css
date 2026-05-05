@@ -193,13 +193,8 @@ footer div{
     width:25%;
     padding:10px 5%;
 }
-article img,article div{
-    width:100%;
-}
-footer div{
-    width:25%;
-    padding:10px 5%;
-}
+
+
 @media (max-width: 768px){
     nav .dropdown{
         display:none;
